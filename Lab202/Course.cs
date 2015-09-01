@@ -13,8 +13,7 @@ namespace Lab2
         private string lecturer;
         private int maxStudent;
         private int numStudent;
-
-
+        
         public string Name
         {
             get
@@ -44,21 +43,21 @@ namespace Lab2
 
 						}
 					}
-					if (x == 6) 
+		    			if (x == 6) 
 					{
 						courseID = value;
 					} else {
 						Console.WriteLine ("{0}: error try setting invalid CourseID!", courseid);
 				        	}
 				    } 
-                    else
+                        else
                     {
                         Console.WriteLine(courseID + ": error try setting invalid CourseID!");
                     }
                 }
             }
         }
-    public Course()
+        public Course()
         {
             lecturer = "staff";
             numStudent = 0;
@@ -140,18 +139,7 @@ namespace Lab2
            }
 
         }
-        public string Lecturer
-       {
-            get
-            {
-                return lecturer;
-            }
-            set
-            {
-                lecturer = value;
-            }
-        }
-        
+                
         public override string toString()
         {
              return "Course:"+ Name+  "(" + CourseID + "), Lecturer=" + Lecturer + " , has " + NumStudents + " students, max="+ MaxStudents;
